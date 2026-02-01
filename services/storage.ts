@@ -1,12 +1,5 @@
 import { Task, TaskSubmission, User, UserRole, TaskType } from '../types';
 
-const KEYS = {
-  USERS: 'linguaflow_users',
-  TASKS: 'linguaflow_tasks',
-  SUBMISSIONS: 'linguaflow_submissions',
-  CURRENT_USER: 'linguaflow_current_user'
-};
-
 // --- Helpers ---
 const get = <T>(key: string, defaultVal: T): T => {
   const stored = localStorage.getItem(key);
